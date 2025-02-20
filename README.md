@@ -1,5 +1,5 @@
 # Reto 7
-## estructura de datos python y queues.
+## Estructura de datos python y queues.
 En este reto ponemos en practica los temas vistos en clase acerca de tuplas, listas, añadir y sacar información de las clases, entre otros.
 
 primero  :
@@ -105,6 +105,22 @@ cola.encolar(mesa_2)
 
 while not cola.esta_vacia():
   print("Atentiendo a la", cola.desencolar())
+# Lo que se muestra en una factura
+#Atentiendo a la Mesa 2: 
+#Factura de lo que ordeno
+#Nombre: mango
+# jugo: En agua
+# Precio: 5000
+
+#Nombre: corriente
+ #Sopa: con sopa
+ #Precio: 15000
+
+,#Nombre: brownie
+ #postre: grande
+ #Precio: 3000
+
+  #          Resultado $23000 pesos.
 ```
 y así tendriamos..... momento! 
 
@@ -125,6 +141,7 @@ MenuItems = namedtuple("Menuitem", ["Nombre", "Precio", "Adición"])
 ```
 Bueno....y ahora que?
 Aunque pareciera que ahí ya acabo y cumple la función de existir, pues no. 
+
 Anteriormente habia usado una funcion *x* llamada mostrar, solo para mostrar mientras programaba, pero esta vez hice un gran cambio,
 pues ahora esta es visible y esta es util para el espectador, pues al final cuando se tenga todo, la función llamara a mostrar y mostrar lo que se pidió, y aquí 
 es dónde brilla nuestro nombre tupla. 
@@ -160,7 +177,7 @@ class postre(MenuItem):
         return f"\nNombre: {self.postre.Nombre}\n jugo: {self.postre.Adición}\n Precio: {self.postre.Precio}\n\n"
 # Ahora que lo pienso... creo que se podria poner todas en una sola clase o en un "def" de tal manera que no se necesite poner una por una... sino traerla...
 ```
-Bueno ahora si, esto que mostre aca con "mostrar" es lo que se ve como print al final entre otras cosas no muy significativas.
+Bueno ahora si, esto que mostre aca con "mostrar" es lo que se ve como print al final, entre otras cosas (no muy significativas..como carreta y demás).
 
 ## llegamos !
 Bueno ya para concluir, creo que lo de las tuplas nombre me gusto peeero no le vi mucha utilidad hasta.... hace 10 segundos... pero lo de las colas y demas me gusto bastante,
